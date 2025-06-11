@@ -1,0 +1,10 @@
+﻿@model Employee
+<h2>@(ViewContext.RouteData.Values["action"]) Employee</h2>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="text" asp-for="Name" placeholder="Name" required /><br />
+    <input type="number" asp-for="Age" placeholder="Age" required /><br />
+    <input type="text" asp-for="Department" placeholder="Department" required /><br />
+    <input type="number" asp-for="Salary" placeholder="Salary" required /><br />
+    <button type="submit">Save</button>
+</form>
