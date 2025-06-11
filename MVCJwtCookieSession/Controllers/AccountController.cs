@@ -60,7 +60,7 @@ namespace MVCJwtCookieSession.Controllers
                     Expires = DateTimeOffset.Now.AddHours(1)
                 });
 
-                // Store in Session too (not mandatory, just to learn)
+                // Store in Session too (not mandatory, just to learn) usually stores on server
                 HttpContext.Session.SetString("jwt_token", token);
 
                 return RedirectToAction("Index", "Employee");
